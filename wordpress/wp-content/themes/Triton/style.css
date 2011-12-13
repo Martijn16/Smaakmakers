@@ -27,8 +27,9 @@ body {
 	background-repeat: repeat;
 }
 	
-#footer {
-	background-image:url(images/footer_background.jpg);
+#footer_background {
+	height: 270px;
+	background-image:url(images/footer_background.png);
 	background-repeat: repeat;
 }
 
@@ -210,32 +211,22 @@ img.alignleft {
 
 #wrapper {
 	width:1000px;
-	margin:0px auto;
+	margin:-192px auto;
 	position:relative;
-
-
-	}
-#casing {
-	padding:0px 0px 0px 0px;
-	float:left;
-	width:1000px;
-	margin:0px 0px 20px 0px;
-	background:url(images/casing.png);
-
 	}		
 
 /* The Header */
 
 #masthead {
 
-	height:140px;
+	height:307px;
 }
 
 
 #top {
 	height:100px;
 	margin:auto;
-	width:1000px;
+	width:960px;
 	position:relative;
 	}
 
@@ -520,16 +511,6 @@ text-decoration: underline;
 	/*Page menu*/
 
 
-#foxmenucontainer{
-	height:40px;
-	display:block;
-	margin:0px auto;
-	font: 10px Arial,Tahoma,Century gothic,verdana,  sans-serif;
-	font-weight:normal;
-	text-transform:uppercase;
-	width:1000px;
-	background:url(images/menu.png);
-	}
 	
 #menu{
 	margin:0px 10px 0px 10px;
@@ -1020,7 +1001,6 @@ li.recentcomments{
 	font-size:12px;
 	margin:0px auto;
 	font-family:Arial;
-	background:#FEFFEF;
 	}
 
 #footer a:link , #footer a:visited{
@@ -1029,6 +1009,10 @@ li.recentcomments{
 
 #footer a:hover {
 		color:#7F7F7F;
+	}
+
+#footer_background {
+	
 	}
 
 .fcred{
