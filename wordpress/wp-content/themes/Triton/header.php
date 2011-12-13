@@ -52,6 +52,7 @@ wp_head(); ?>
 <body>
 
 <div id="masthead"> 
+<img src="wp-content/themes/triton/images/balktop.png" id="balktop" alt"van de leur"> 
 <div id="catmenucontainer">
 	
 	<?php wp_nav_menu( array( 'container_id' => 'catmenu','theme_location' => 'primary','fallback_cb'=> '' ) ); ?>
@@ -69,6 +70,11 @@ wp_head(); ?>
 
 <div id="wrapper">
 
+
+<div id="casing">
+<div id="foxmenucontainer">
+		<?php wp_nav_menu( array( 'container_id' => 'menu', 'theme_location' => 'secondary','fallback_cb'=> '' ) ); ?>	
+</div>
 
 		<?php if (is_front_page()) { ?>
 <?php include (TEMPLATEPATH . '/slide.php'); ?>	

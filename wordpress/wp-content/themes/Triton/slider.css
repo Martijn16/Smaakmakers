@@ -1,9 +1,9 @@
 /* Slider */
 #slider{
 	background:url(images/slide.png) repeat-x;
-	padding:11px;
-	width:938px;
-	height:322px;
+	padding:10px;
+	width:940px;
+	height:280px;
 	position: relative; /* important */
 	overflow: hidden; /* important */
 	margin:20px 20px 10px 20px;
