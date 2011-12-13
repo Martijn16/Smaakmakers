@@ -57,17 +57,10 @@ wp_head(); ?>
 	<?php wp_nav_menu( array( 'container_id' => 'catmenu','theme_location' => 'primary','fallback_cb'=> '' ) ); ?>
 	
 </div>	
-<div id="top"> 
+<div id="top">
+<img src="wp-content/themes/triton/images/logo_vdl.png" id="logo_vandeleur" alt"van de leur"> 
 
-<div class="blogname">
-	<h1><a href="<?php bloginfo('siteurl');?>/" title="<?php bloginfo('name');?>"><?php bloginfo('name');?> </a></h1>
-	<h2><?php bloginfo('description'); ?></h2>
-</div>
 <?php include (TEMPLATEPATH . '/searchform.php'); ?>
-
-<div class="toplist">
-<a href="<?php bloginfo('rss2_url'); ?>">RSS feed</a> | <a href="http://twitter.com/<?php $twit = get_option('trit_twit'); echo ($twit); ?>">Twitter Follow</a> | <a href="<?php $face = get_option('trit_face'); echo ($face); ?>"> Facebook </a> 
-</div>
 
 </div>
 

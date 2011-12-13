@@ -18,12 +18,24 @@ Tags: Black, white, grey,red ,2 column, jQuery slider , thumbnail, right-sidebar
 
 
 body {
-	margin:0 auto;
-	padding:0px 0px 0px 0px;
-	background:#e1e2d0 url(images/body.png) top repeat-x ;
-	font-family: Tahoma,verdana,Arial,Century gothic,  sans-serif;
-	font-size:13px;
-	}
+	background-image:url(images/background.jpg);
+	
+}
+
+#masthead {
+	background-image:url(images/header_background.jpg);
+	background-repeat: repeat;
+}
+	
+#footer {
+	background-image:url(images/footer_background.jpg);
+	background-repeat: repeat;
+}
+
+#logo_vandeleur {
+	height: 59px;
+}
+
 img {
 	border:0;
 	margin: 0 0;
@@ -225,9 +237,11 @@ img.alignleft {
 	margin:auto;
 	width:1000px;
 	position:relative;
-
-	
 	}
+
+#logo_vandeleur {
+	size: 50%;
+}	
 	
 .toplist{
 	font-family:Georgia;
@@ -380,28 +394,30 @@ text-decoration: underline;
 	
 /*  menu*/
 	
-#catmenucontainer{
+#catmenucontainer {
 	height:40px;
 	display:block;
 	padding:0px 0 0px 0px;
-	font: 10px Arial,Tahoma,Century gothic,verdana,  sans-serif;
+	font: 10px helvetica;
 	font-weight:normal;
-	text-transform:uppercase;
-	}
+	
+}
 		
-#catmenu{
+#catmenu {
 	margin: 0px auto;
 	padding: 7px 0px 0px 0px;
 	height:27px;
 	overflow:hidden;
 	width:1000px;
-	}
+}
+	
 #catmenu ul
 {
 	float: left;
 	list-style: none;
-	margin: 0px;
+	margin-top: 40px;
 	padding: 0px;
+	position: absolute;
 }
 #catmenu li
 {
@@ -412,15 +428,16 @@ text-decoration: underline;
 }
 #catmenu li a, #catmenu li a:link, #catmenu li a:visited
 {
-	color: #9F9F9F;
+	color: #4A300F;
 	display: block;
 	font-weight: normal;
 	padding: 0px 10px ;
 	line-height:27px;
-	text-shadow:1px 1px 1px #203F04;
+
 
 
 }
+
 #catmenu li a:hover, #catmenu li a:active
 {
 	line-height:25px;
