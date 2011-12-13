@@ -24,7 +24,7 @@ class WP_Terms_List_Table extends WP_List_Table {
 
 		$tax = get_taxonomy( $taxonomy );
 
-		if ( empty( $post_type ) || !in_array( $post_type, get_post_types( array( 'show_ui' => true ) ) ) )
+		if ( empty( $post_type ) || !in_array( $post_type, get_post_types( array( 'public' => true ) ) ) )
 			$post_type = 'post';
 
 		parent::__construct( array(
@@ -93,7 +93,7 @@ class WP_Terms_List_Table extends WP_List_Table {
 	}
 
 	function get_columns() {
-		global $taxonomy, $post_type;
+		global $taxonomy, $typenow;
 
 		$columns = array(
 			'cb'          => '<input type="checkbox" />',
@@ -105,6 +105,7 @@ class WP_Terms_List_Table extends WP_List_Table {
 		if ( 'link_category' == $taxonomy ) {
 			$columns['links'] = __( 'Links' );
 		} else {
+			$post_type = empty( $typenow ) ? 'post' : $typenow;
 			$post_type_object = get_post_type_object( $post_type );
 			$columns['posts'] = $post_type_object ? $post_type_object->labels->name : __( 'Posts' );
 		}
@@ -289,8 +290,7 @@ class WP_Terms_List_Table extends WP_List_Table {
 
 		$tax = get_taxonomy( $taxonomy );
 
-		$ptype_object = get_post_type_object( $post_type );
-		if ( ! $ptype_object->show_ui )
+		if ( ! $tax->public )
 			return $count;
 
 		if ( $tax->query_var ) {
@@ -299,8 +299,7 @@ class WP_Terms_List_Table extends WP_List_Table {
 			$args = array( 'taxonomy' => $tax->name, 'term' => $tag->slug );
 		}
 
-		if ( 'post' != $post_type )
-			$args['post_type'] = $post_type;
+		$args['post_type'] = $post_type;
 
 		return "<a href='" . esc_url ( add_query_arg( $args, 'edit.php' ) ) . "'>$count</a>";
 	}
@@ -324,7 +323,7 @@ class WP_Terms_List_Table extends WP_List_Table {
 	 * @since 3.1.0
 	 */
 	function inline_edit() {
-		global $post_type, $tax;
+		global $tax;
 
 		if ( ! current_user_can( $tax->cap->edit_terms ) )
 			return;
@@ -363,14 +362,13 @@ class WP_Terms_List_Table extends WP_List_Table {
 	?>
 
 		<p class="inline-edit-save submit">
-			<a accesskey="c" href="#inline-edit" title="<?php esc_attr_e( 'Cancel' ); ?>" class="cancel button-secondary alignleft"><?php _e( 'Cancel' ); ?></a>
+			<a accesskey="c" href="#inline-edit" title="<?php _e( 'Cancel' ); ?>" class="cancel button-secondary alignleft"><?php _e( 'Cancel' ); ?></a>
 			<?php $update_text = $tax->labels->update_item; ?>
 			<a accesskey="s" href="#inline-edit" title="<?php echo esc_attr( $update_text ); ?>" class="save button-primary alignright"><?php echo $update_text; ?></a>
 			<img class="waiting" style="display:none;" src="<?php echo esc_url( admin_url( 'images/wpspin_light.gif' ) ); ?>" alt="" />
 			<span class="error" style="display:none;"></span>
 			<?php wp_nonce_field( 'taxinlineeditnonce', '_inline_edit', false ); ?>
 			<input type="hidden" name="taxonomy" value="<?php echo esc_attr( $tax->name ); ?>" />
-			<input type="hidden" name="post_type" value="<?php echo esc_attr( $post_type ); ?>" />
 			<br class="clear" />
 		</p>
 		</td></tr>
