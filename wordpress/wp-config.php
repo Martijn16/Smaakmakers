@@ -16,10 +16,10 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'vandeleur2');
+define('DB_NAME', 'vandeleur');
 
 /** MySQL database username */
-define('DB_USER', 'vandeleur');
+define('DB_USER', 'root');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'root');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'g{@t(y)PO$2xQ^7!Z<>p)T)xF3~NRTAK).q_}!D=F0~5kju;vVc0.:LRN!}bA!%?');
-define('SECURE_AUTH_KEY',  '(6ve3eACPv( u9r 5u9SV@#BgQ=aI(mp;3(:60Axq!WU77!GSxxTzx6MR>lYQ~-G');
-define('LOGGED_IN_KEY',    'gawKKTx?G$?K>e/O_*jwaSCMpimnr2mtMRwyz]`2%#-Ca#]`luZRe?xCqP=Hfb}V');
-define('NONCE_KEY',        'J{WsS.*t#oBS[zhx(RpRS+.yD&>Q,q)rs;~qW+Row8!6Ql._h]gECBn<KT?h_ZEB');
-define('AUTH_SALT',        'kdUaGyw:X,(%A9M73;+/~g_T34{#sgj;]*@BK%oO]!]YJ[lUmvAvIQz+kD;}8_U<');
-define('SECURE_AUTH_SALT', 'uZ{QekprN`Q;;6iyJnNYUJyua]msYTiYz7lH|C!,VQt8C2qy=cA-n/505>GoMx/W');
-define('LOGGED_IN_SALT',   'S.kw,zxX#$4PVRAcrBTqbi@I57[9zEtl:HEVq5k+LzGv{*/hZmPxW/je]#bDl<-f');
-define('NONCE_SALT',       'Ha:U%Zl9{Q]bk9Py(am~%|ct&Tk8F8<Z[PslZn4I jtD.47/yNY#NY}JlZN}X:sw');
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
 
 /**#@-*/
 
@@ -69,7 +69,7 @@ $table_prefix  = 'wp_';
  * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
  * language support.
  */
-define('WPLANG', '');
+define('WPLANG', 'nl_NL');
 
 /**
  * For developers: WordPress debugging mode.
