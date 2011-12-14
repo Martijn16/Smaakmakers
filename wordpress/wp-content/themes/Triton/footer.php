@@ -1,6 +1,8 @@
 
 <?php include (TEMPLATEPATH . '/bottom.php'); ?>	
 
+</div>
+</div>
 <div id="footer">
 
 <div id="nav">
@@ -15,9 +17,7 @@
 
 
 <?php wp_footer(); ?>
-</div>
 
-</div>
 <div id="footer_background">
 
 </div>	

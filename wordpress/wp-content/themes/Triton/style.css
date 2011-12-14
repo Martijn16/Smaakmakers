@@ -797,28 +797,7 @@ color:#7b7b7b;
 	margin-left:20px;
 
 }
-.twitbox{
-	float:left;
-	width:260px;
-	background:#fff;
-	margin-bottom:10px;
-	border:1px solid #ddd;
-	}
 
-p.twitter-message{
-	color:#666;
-	padding:10px 5px;
-	font-size:12px;
-	border-bottom:1px dotted #ddd;
-}
-
-a.twitter-link{
-	color:#B92800;
-}
-
-a.twitter-user{
- 	color:#B92800;
-}
 
 
 h3.sidetitl{
@@ -1416,32 +1395,6 @@ display:none;
 }
 
 
-
-
-
-
-
-
-
-.feedlist{
-height:40px;
-	width:260px;
-	display:inline-block;
-}
-.feedlist ul {
-	list-style:none;
-}
-
-.feedlist ul li{
-	float:left;
-	margin:0px 6px 0px 0px;
-	display:block;
-}
-.feedlist ul li:last-child{
-	float:right;
-	margin:0px 0px 0px 0px;
-	display:block;
-}
 .getshort{
 height:25px;
 }
