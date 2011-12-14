@@ -1,26 +1,28 @@
 
-<?php include (TEMPLATEPATH . '/bottom.php'); ?>	
 
 </div>
-</div>
+
 <div id="footer">
 
-<div id="nav">
+<div id="footer_nav">
 <p class="titelfooter">Van de Leur</p>
 	<ul>
 		<li><a href="HIERLINK">Historie</a></li>
 		<li><a href="HIERLINK">Bedrijfsvoering</a></li>
 		<li><a href="HIERLINK">Virtuele tour</a></li>
 	</ul>
-</div> <!-- end nav -->
+</div> <!-- end footer_nav -->
 
-
-
-<?php wp_footer(); ?>
+<p id="titel_copyright">&copy; 2011 Van de Leur | Algemene voorwaarden</p>
+</div>
+</div>
 
 <div id="footer_background">
 
-</div>	
+<?php wp_footer(); ?>
 </div>
+
+
+
 </body>
 </html>      

@@ -23,13 +23,7 @@ body {
 }
 
 #masthead {
-	background-image:url(images/header_background.jpg);
-	background-repeat: repeat;
-}
-	
-#footer_background {
-	height: 270px;
-	background-image:url(images/footer_background.png);
+	background-image:url(images/header_background.png);
 	background-repeat: repeat;
 }
 
@@ -210,10 +204,14 @@ img.alignleft {
 /* The Outer cover */
 
 #wrapper {
-	width:1000px;
+	width:960px;
 	margin:-192px auto;
 	position:relative;
 	}		
+
+#casing {
+	position: relative;
+	}
 
 /* The Header */
 
@@ -974,25 +972,42 @@ li.recentcomments{
 /* --- FOOTER --- */
 	
 #footer {
-
-	padding:10px 0 10px 0px;
-	color:#7F7F7F;
-	font-size:12px;
-	margin:0px auto;
-	font-family:Arial;
+	height: 270px;
+	clear:both;
+	}
+	
+#footer_nav {
+	color:#4a300f;
+	font-size:18px;
+	font-style: bold;
+	font-family:Helvetica;
+	width:960px;
 	}
 
-#footer a:link , #footer a:visited{
-		color:#7F7F7F;
+# a:link , #footer a:visited{
+		color:#4a300f;
 	}
 
 #footer a:hover {
-		color:#7F7F7F;
+		color:#ee5300;
+	}
+	
+#titel_copyright {
+	color:#4a300f;
+	font-size: 12px;
+	font-style: normal;
+	font-family: Helvetica;
+	width:960px;
+	position: absolute;
+	margin-top: 246px;
 	}
 
 #footer_background {
-	
+	height: 270px;
+	background-image:url(images/footer_background.png);
+	background-repeat: repeat;
 	}
+
 
 .fcred{
 
@@ -1030,6 +1045,7 @@ h2.pagetitle {
  h2.pagetitle a {
  	color:#507409;
  }
+ 
 /* Comments */
 
 #commentsbox {
@@ -1342,10 +1358,6 @@ display:none;
 	margin:0px 0px;
 }
 
-
-
-
-
 .phumb{
 	margin:0px 5px 0px 5px;
 	width:80px;
@@ -1402,7 +1414,7 @@ height:25px;
 #bottom{
 
 	margin:0px auto;
-	width:980px;
+	width:960px;
 }
 .bottomcover{
 	background:#ac1334 ;
