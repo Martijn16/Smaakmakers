@@ -27,14 +27,20 @@ body {
 	background-repeat: repeat;
 }
 	
-#footer_background {
-	height: 270px;
-	background-image:url(images/footer_background.png);
+#footer {
+	background-image:url(images/footer_background.jpg);
 	background-repeat: repeat;
 }
 
 #logo_vandeleur {
 	height: 59px;
+	margin-top: -25px;
+}
+
+#balktop {
+	height: 5px;
+	width: 1400px;
+	margin: 0 auto;
 }
 
 img {
@@ -211,22 +217,25 @@ img.alignleft {
 
 #wrapper {
 	width:1000px;
-	margin:-192px auto;
+	margin:0px auto;
 	position:relative;
-	}		
+
+
+	}
+	
 
 /* The Header */
 
 #masthead {
 
-	height:307px;
+	height:140px;
 }
 
 
 #top {
 	height:100px;
 	margin:auto;
-	width:960px;
+	width:1000px;
 	position:relative;
 	}
 
@@ -388,8 +397,7 @@ text-decoration: underline;
 #catmenucontainer {
 	height:40px;
 	display:block;
-	padding:0px 0 0px 0px;
-	font: 10px helvetica;
+	font: 12px helvetica;
 	font-weight:normal;
 	
 }
@@ -404,9 +412,9 @@ text-decoration: underline;
 	
 #catmenu ul
 {
-	float: left;
+	margin-left: 250px;
 	list-style: none;
-	margin-top: 40px;
+	margin-top: 5px;
 	padding: 0px;
 	position: absolute;
 }
@@ -424,9 +432,7 @@ text-decoration: underline;
 	font-weight: normal;
 	padding: 0px 10px ;
 	line-height:27px;
-
-
-
+	
 }
 
 #catmenu li a:hover, #catmenu li a:active
@@ -437,34 +443,26 @@ text-decoration: underline;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	background:#2c2d31;
-	border-top:1px solid #2c2d31;
-	border-bottom:1px solid #46484e;
-
+	background: #ee5300;
+	
 }
+
 #catmenu li li a, #catmenu li li a:link, #catmenu li li a:visited
 {
-	background:#0C1820;
 	border-bottom: 1px solid #000;
 	color: #9F9F9F;
-	float: none;
+	float: left;
 	margin: 0px;
-	line-height:34px;
-	width: 150px;
+	
 }
 #catmenu li li a:hover, #catmenu li li a:active
 {
-	background: #050505;
-	border:none;
-	border-bottom: 1px solid #000;
+
 	color: #fff;
 	float: none;
 	line-height:34px;
 	margin: 0px;
-	width: 150px;
-	border-radius: 0px;
-	-moz-border-radius: 0px;
-	-webkit-border-radius: 0px;
+
 }
 #catmenu li ul
 {
@@ -472,17 +470,17 @@ text-decoration: underline;
 	left: -999em;
 	margin: 0px;
 	padding: 5px 0px;
-	position: absolute;
-	width: 170px;
-	z-index: 9999;
+
 
 }
 #catmenu li li
 {
+
 }
 #catmenu li ul a
 {
-	width: 140px;
+
+	
 }
 #catmenu li ul a:hover, #catmenu li ul a:active
 {
@@ -511,38 +509,46 @@ text-decoration: underline;
 	/*Page menu*/
 
 
+#foxmenucontainer{
+	height:40px;
+	display:block;
+	margin:0px auto;
+	font: 10px Helvetica;
+	font-weight:normal;
+	width:1000px;
+	
+	
+	}
 	
 #menu{
-	margin:0px 10px 0px 10px;
-	padding: 8px 0px 0px 0px;
+
 	height:27px;
 	overflow:hidden;
 	margin:0px auto;
-	width:980px;
+	
 	}
 	
 #menu ul {
 	float: left;
-	list-style: none;
+	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
 	}
 	
 #menu li {
 	float: left;
-	list-style: none;
+	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
 
 	}
 	
 #menu li a, #menu li a:link, #menu li a:visited {
-	color:#410714;
-	display: block;
+	
 	margin: 0px;
 	padding: 0px 10px ;
 	line-height:27px;
-	text-shadow:1px 1px 0px #e81946;
+	
 	}
 
 #menu li a:hover, #menu li a:active {
@@ -555,10 +561,11 @@ text-decoration: underline;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	background:#b71437;
+	background: pink;
 	border-top:1px solid #a31231;
 	border-bottom:1px solid #e91946;
 	text-shadow:1px 1px 0px #9F1333;
+	
 	}
 	
 #menu li li a, #menu li li a:link, #menu li li a:visited {
@@ -572,6 +579,7 @@ text-decoration: underline;
 	line-height:32px;
 	border-bottom:1px solid #A31231;
 	text-shadow:1px 1px 0px #9F1333;
+	
 	}
 	
 #menu li li a:hover, #menu li li a:active {
@@ -585,6 +593,7 @@ text-decoration: underline;
 	border-radius: 0px;
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
+	
 	}
 
 #menu li ul {
@@ -599,17 +608,21 @@ text-decoration: underline;
 	}
 
 #menu li li { 
+	
 	}
 
 #menu li ul a { 
 	width: 140px;
+	
 	}
 
 #menu li ul a:hover, #menu li ul a:active { 
+	
 	}
 
 #menu li ul ul {
 	margin: -38px 0 0 170px;
+	
 	}
 
 #menu li:hover ul ul, #menu li:hover ul ul ul, 
@@ -980,6 +993,7 @@ li.recentcomments{
 	font-size:12px;
 	margin:0px auto;
 	font-family:Arial;
+	background:#FEFFEF;
 	}
 
 #footer a:link , #footer a:visited{
@@ -988,10 +1002,6 @@ li.recentcomments{
 
 #footer a:hover {
 		color:#7F7F7F;
-	}
-
-#footer_background {
-	
 	}
 
 .fcred{
